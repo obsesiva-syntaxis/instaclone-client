@@ -1,0 +1,28 @@
+@import '../../../../scss/index.scss';
+
+.comments {
+    height: 80%;
+    overflow-y: auto;
+    max-height: 400px;
+
+    .comment {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid $border-grey;
+        color: $font-grey;
+
+        img {
+            margin-right: 15px !important;
+        }
+
+        p {
+            margin: 0;
+
+            &:first-of-type {
+                color: $font-dark;
+                font-weight: bold;
+            }
+        }
+    }
+}
